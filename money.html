@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bitlab</title>
+	<link rel="stylesheet" href="styleM.css">
+	<script type="text/javascript" src="money.js"></script>
+</head>
+<body>
+	<div class="Block">
+		<span class="TextP">Введите сумму:</span>
+		<br>
+		<div class="inone">
+		<input type="number" id="inputId" class="numsBlock" onchange="changing()">
+		<select class="selectBlock" id="selId">
+			<option class="optionTxt" onchange="changing()">KZT</option> 
+			<option class="optionTxt" onchange="changing()">USD</option> 
+			<option class="optionTxt" onchange="changing()">EUR</option> 
+		</select>
+	</div>
+	</div>
+	<div class="Block">
+		<b class="TextP">KZT(tenge)</b>
+		<br>
+		<input type="number" id="inputKZTId" placeholder="-" class="textplace">
+	</div>
+		<div class="Block">
+		<b class="TextP">USD(dollar)</b>
+		<br>
+		<input type="number" id="inputUSDId" placeholder="-" class="textplace">
+	</div>
+		<div class="Block">
+		<b class="TextP">EUR(euro)</b>
+		<br>
+		<input type="number" id="inputEURId" placeholder="-" class="textplace">
+	</div>
+				<button onclick="changing()" class="CHangeBlock">CLICK</button>	
+</body>
+</html>
